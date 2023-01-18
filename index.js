@@ -67,11 +67,7 @@ function addManager() {
                 name: 'email',
                 message: 'Email address of the team manager?',
             },
-            {
-                type: 'input',
-                name: 'imgSrc',
-                message: 'What is the imgSrc of the team manager?',
-            },
+            
             {
                 type: 'input',
                 name: 'officeNumber',
@@ -105,11 +101,7 @@ function addEngineer() {
                 name: 'email',
                 message: `What is the engineer's email address?`,
             },
-            {
-                type: 'input',
-                name: 'imgSrc',
-                message: 'What is the img Src of the Engineer?',
-            },
+            
             {
                 type: 'input',
                 name: 'gitHub',
@@ -143,11 +135,7 @@ function addIntern() {
                 name: 'email',
                 message: `What is the Intern's email address?`,
             },
-            {
-                type: 'input',
-                name: 'imgSrc',
-                message: 'What is the img Src of the Intern?',
-            },
+            
             {
                 type: 'input',
                 name: 'school',

@@ -14,7 +14,7 @@ const DIST_DIR = path.resolve(__dirname, 'dist');
 const outputPath = path.join(DIST_DIR, 'teamProfile.html');
 
 // Import HTML template
-
+const templateHTML = require('./src/templateHTML');
 
 // Create an empty array of team members
 const teamMembers = [];
@@ -169,7 +169,7 @@ function createTeamFile() {
     if (!fs.existsSync(DIST_DIR)) {
         fs.mkdirSync(DIST_DIR);
     } else {
-        fs.writeFileSync(outputPath, 'utf-8');
+        fs.writeFileSync(outputPath, templateHTML(teamMembers), 'utf-8');
         console.log('HTML file created in the dist folder');
     }
 }

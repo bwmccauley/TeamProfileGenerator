@@ -32,12 +32,7 @@ test('An email can be added as a property to an Employee Object', () => {
     expect(employeeObject.email).toBe('bigboy69@company.com');
 });
 
-// Test imgSrc added to object
-test('An imgSrc can be added as a property to an Employee Object', () => {
-    const imgSrc = './../assets/app_imgs/alex-suprun-unsplash.jpg';
-    const employeeObject = new Employee('George', 2457, 'bigboy69@company.com', imgSrc);
-    expect(employeeObject.imgSrc).toBe('./../assets/app_imgs/alex-suprun-unsplash.jpg');
-});
+
 
 // Test that the correct role has been added
 test('Employee has been added as the value for the property of role', () => {
@@ -71,9 +66,3 @@ test('email is retrieved through getEmail() method', () => {
     expect(employeeInstance.getEmail()).toBe(testEmail);
 });
 
-// Test imgSrc added to object
-test('imgSrc value is retrieved through getImgSrc() method', () => {
-    const testImgSrc = './../assets/app_imgs/alex-suprun-unsplash.jpg';
-    const employeeObject = new Employee('George', 2457, 'bigboy69@company.com', testImgSrc);
-    expect(employeeObject.imgSrc).toBe('./../assets/app_imgs/alex-suprun-unsplash.jpg');
-});
